@@ -4,8 +4,8 @@ var Twitter = require('twitter')
 var  client  = new Twitter ( {  
     consumer_key : 'joueurcoin' , 
     consommateur_secret : 'ingesupB1' , 
-    access_token_key : '1561334624-k82qoSdsVY5wCwEkZOA0RYR9lilloul3p82dECUAi', 
-    access_token_secret : 'REWBYxf5Jvj5GZjwSssseZxfr5bcUwBvY9Hpq4CaRzo8COx7'
+    access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+    access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
   } ) ;
 
   client.get('favorites/tweets', function(error, tweets, response) {
