@@ -1,0 +1,17 @@
+{
+    "name": "projet_api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "code.js",
+    "scripts": {
+        "start": "node code.js"
+    },
+    "bin": {
+        "client_twitter": "./code.js"
+    },
+    "dependencies": {
+        "commander": "^2.19.0",
+        "inquirer": "^6.2.0",
+        "twitter": "^1.7.1"
+    }
+}
