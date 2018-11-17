@@ -1,17 +1,28 @@
 {
-    "name": "projet_api",
-    "version": "1.0.0",
-    "description": "",
-    "main": "code.js",
-    "scripts": {
-        "start": "node code.js"
-    },
-    "bin": {
-        "client_twitter": "./code.js"
-    },
-    "dependencies": {
-        "commander": "^2.19.0",
-        "inquirer": "^6.2.0",
-        "twitter": "^1.7.1"
-    }
+  "name": "projet_api",
+  "version": "1.0.0",
+  "description": "NodeJS_projet",
+  "main": "code.js",
+  "scripts": {
+    "start": "node code.js"
+  },
+  "bin": {
+    "client_twitter": "./code.js"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "inquirer": "^6.2.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Borixx33/NodeJS_projet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Borixx33/NodeJS_projet/issues"
+  },
+  "homepage": "https://github.com/Borixx33/NodeJS_projet#readme"
 }

@@ -1,14 +1,8 @@
 #!/usr/bin/env node
-var Twitter = require('twitter')
 
-var  client  = new Twitter ( {  
-    consumer_key : 'joueurcoin' , 
-    consommateur_secret : 'ingesupB1' , 
-    access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
-    access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
-  } ) ;
-
-  client.get('favorites/tweets', function(error, tweets, response) {
-    console.log(tweets);
-    console.log(response);
-  });
+module .exports = { 
+  consumer_key : 'V5qldfwD0grCPXqJtM2PhBuuq', 
+  consommateur_secret : '541szJxPM0w9ygQgTTJ4txWljikMEsxHySPIsRLazLDLGog08h', 
+  access_token_key: '999413403075661824-a7hzYGZltXf0HBIIRAcWZm6nnLFlqKS',
+  access_token_secret: 'WiJQ95XRApH2jvx8HhUGRpZAi0lkwVCfr2xc3lqAOSiFf'
+}
