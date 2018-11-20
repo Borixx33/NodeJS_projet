@@ -12,6 +12,7 @@
   "dependencies": {
     "commander": "^2.19.0",
     "inquirer": "^6.2.0",
+    "kbd": "^0.1.0",
     "twitter": "^1.7.1"
   },
   "devDependencies": {},

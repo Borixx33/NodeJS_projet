@@ -1,12 +1,26 @@
+// Appel des modules
+const inquirer = require('inquirer')
 var Twitter = require ('twitter'); 
 var config = require ('./code.js');
 var T = new Twitter (config);
 
-//Configurez vos paramètres de recherche
 
-var params = { 
-    q: '#marvel', 
-    count: 10, 
+// Demande a l'utilisateur l'hashtag et le nombre de recherche qui souhaite
+inquirer.prompt([
+  {
+  type: 'input',
+  message: 'Entrez votre l\'hashtag que vous souhaitez chercher',
+  name: 'hashtag'
+  }, {
+  type: 'input',
+  message: 'Entrez le nombre de cherche que vous voulez',
+  name: 'nombre'
+  },
+ ]).then(answers => {
+   //Configurez vos paramètres de recherche
+  var params = { 
+    q: answers.hashtag, 
+    count: answers.nombre, 
     result_type: 'recent', 
     lang: 'en' 
   }
@@ -36,3 +50,4 @@ var params = {
       console.log(err);
     }
   })
+ });

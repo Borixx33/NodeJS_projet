@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+// Identifiant et token pour ce connecter à Twitter
 module .exports = { 
   consumer_key : 'V5qldfwD0grCPXqJtM2PhBuuq', 
   consumer_secret : '541szJxPM0w9ygQgTTJ4txWljikMEsxHySPIsRLazLDLGog08h' , 
